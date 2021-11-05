@@ -1,0 +1,32 @@
+.image-container-zoom > .image-viewer-button-right:hover,
+.image-container-zoom > .image-viewer-button-left:hover,
+.image-container-zoom > .image-viewer-button-top:hover,
+.image-container-zoom > .image-viewer-button-bottom:hover {
+    opacity: 1;
+}
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+}
+.image-container-zoom {
+    overflow: scroll;
+}
+.image-file {
+    margin: 0 auto;
+}
+.image-file-zoom-1 {
+    width: 100%;
+}
+.image-file-zoom-2 {
+    width: unset;
+}
+.image-file:hover {
+    cursor: pointer;
+}
+
+.image-footer {
+    border-top: 0.1rem solid $color-gray-dark;
+    background-color: $color-gray;
+}

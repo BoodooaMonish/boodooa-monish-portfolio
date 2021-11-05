@@ -1,0 +1,56 @@
+.btn-custom {
+    border: none;
+    border-radius: 0;
+    position: relative;
+    padding: 0.4rem 0.8rem;
+    margin: 0.7rem 1rem;
+    background-color: $color-base;
+    color: $color-gray-light;
+    white-space: nowrap;
+    transition: none;
+    &:hover {
+        background-color: $color-base-light;
+        color: $color-gray-light;
+    }
+    &:focus {
+        transform: scale(1.1);
+        background-color: $color-base-light;
+        color: $color-gray-light;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 100%;
+        top: 0;
+        left: -8px;
+        background-image: url(../assets/images/sprites.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 500px 200px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 100%;
+        top: 0;
+        right: -8px;
+        background-image: url(../assets/images/sprites.svg);
+        background-repeat: no-repeat;
+        background-position: -8px 0;
+        background-size: 500px 200px;
+    }
+    &:hover::before {
+        background-position: -16px 0;
+    }
+    &:hover::after {
+        background-position: -24px 0;
+    }
+    &:focus::before {
+        background-position: -16px 0;
+    }
+    &:focus::after {
+        background-position: -24px 0;
+    }
+}

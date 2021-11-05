@@ -1,0 +1,15 @@
+.main {
+    margin-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.main > * {
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 576px) {
+    .main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

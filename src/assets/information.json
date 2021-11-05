@@ -1,0 +1,21 @@
+{
+    "contact": {
+        "Github": "https://github.com/BoodooaMonish",
+        "LinkedIn": "https://www.linkedin.com/in/monish-boodooa-40a1b319a/",
+        "Email": "Nevinboodooa@gmail.com"
+    },
+    "introduction": "IT Graduate seeking a career in web development. Possess a strong sense in designing and developing accessible responsive websites to provide an immersive and engaging user experience. <br /> Passionate about UI Designs and Web Animations.",
+    "skills": {
+        "Client Side": ["HTML5", "CSS3", "JAVASCRIPT ES6", "JQUERY", "BOOTSTRAP", "SASS", "REACT", "REDUX", "REST API"],
+        "Development Tools": ["VISUAL STUDIO CODE", "GIT", "INKSCAPE", "GIMP", "PARCELJS", "BABEL"]
+    },
+    "projects": [
+        {
+            "name": "Raghoo's Veggies",
+            "description": "An e-commerce website that sell farm grown vegetables with a pay on delivery service",
+            "image": "/thumbnails/raghoo-veggies-thumb.png",
+            "code": "https://github.com/BoodooaMonish/raghoo-veggies",
+            "website": "https://dazzling-poincare-474e63.netlify.app/"
+        }
+    ]
+}

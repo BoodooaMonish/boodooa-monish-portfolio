@@ -1,0 +1,62 @@
+.popup {
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    z-index: 4;
+    background-color: $color-gray-light;
+    box-shadow: -3px 3px 8px -1px $color-base-dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: transform 350ms ease-out, opacity 300ms ease;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: (15px * 1);
+        width: (60px * 1);
+        background-image: url(../assets/images/sprites.svg);
+        background-position: (-40px * 1) (-8px * 1);
+        background-size: (500px * 1) (200px * 1);
+        background-repeat: no-repeat;
+    }
+    &-displaying {
+        opacity: 1;
+    }
+    &-hide {
+        display: none;
+    }
+    &-hidding {
+        opacity: 0;
+    }
+}
+.popup-close {
+    border: none;
+    font-size: 1.5rem;
+    background-color: inherit;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+    &:hover,
+    &:focus {
+        font-weight: bolder;
+    }
+}
+
+.popup-list {
+    margin-bottom: 0;
+    padding: 0.5rem 1rem;
+    & strong {
+        color: $color-base-dark;
+    }
+    list-style: none;
+}
+
+@media (max-width: 360px) {
+    .popup {
+        &::before {
+            top: -5%;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+//menu-link styles
+.nav-link-custom {
+    text-decoration: none;
+    padding: 0.7rem 0;
+    color: $color-base;
+    white-space: nowrap;
+    &:hover {
+        text-decoration: none;
+        color: $color-base;
+        transform: scale(1.1);
+    }
+    &:focus {
+        transform: scale(1.1);
+        color: $color-base-dark;
+    }
+}
+
+@media (min-width: 576px) {
+    .nav-link-custom {
+        padding: 0 0.7rem;
+    }
+}
+
+// navbar menu animations styles
+@media (max-width: 575.98px) {
+    .navbar-nav {
+        position: absolute;
+        top: 120%;
+        right: 5%;
+        z-index: 6;
+        padding: 2rem 1rem;
+        width: 70%;
+        transition: transform 350ms ease-out, opacity 300ms ease;
+        flex-wrap: nowrap;
+        background-color: $color-gray-light;
+        box-shadow: -3px 3px 8px -1px $color-base-dark;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -4%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: (15px * 2);
+            width: (60px * 2);
+            background-image: url(../assets/images/sprites.svg);
+            background-position: (-40px * 2) (-8px * 2);
+            background-size: (500px * 2) (200px * 2);
+            background-repeat: no-repeat;
+        }
+    }
+
+    .menu-displaying {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    .menu-hide {
+        display: none;
+    }
+    .menu-hidding {
+        transform: translate(110%, 0) scale(1.2);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-nav {
+        width: 90%;
+    }
+}
+
+//navbar
+
+.navbar {
+    background-color: rgba($color-gray-light, 0.7);
+}
+
+//navbar toggler image
+.navbar-toggler {
+    padding: 0.2rem 0.4rem;
+    border: none;
+    &:hover,
+    &:focus {
+        background-color: $color-gray;
+    }
+}
+
+.navbar-toggler-image {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-image: url(../assets/images/sprites.svg);
+    background-position: -2rem 0;
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+    margin: 1rem 0;
+    &::before,
+    &::after {
+        content: "";
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        background-image: url(../assets/images/sprites.svg);
+        background-position: inherit;
+        background-size: inherit;
+        transition: transform 200ms ease;
+    }
+}
+
+.navbar-toggler-image::before {
+    top: -200%;
+    left: 0;
+}
+.navbar-toggler-image::after {
+    top: 200%;
+    left: 0;
+}
+
+//navbar image toggler animations and rotation
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-image {
+    background-image: none;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-image::before {
+    transform: translateY(200%) rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-image::after {
+    transform: translateY(-200%) rotate(-45deg);
+}
