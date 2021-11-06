@@ -21,7 +21,7 @@
         margin-top: 10rem;
         margin-left: 12rem;
         width: 446px;
-        height: 260px;
+        height: auto;
         border-radius: 0.1rem;
         background-color: $color-gray-light;
         box-shadow: -4px 4px 9px -3px $color-base-dark;
@@ -40,11 +40,6 @@
 @media (max-width: 687px) {
     .intro-letter {
         margin-left: 0;
-    }
-}
-@media (max-width: 576px) {
-    .intro-letter {
-        height: auto;
     }
 }
 
