@@ -29,11 +29,7 @@ import ajaxSkills from "./ajax_skills";
 import ajaxProjects from "./ajax_projects";
 import ajaxError from "./ajax_error";
 
-//remove loading
 $(window).on("load", function () {
-    $(".loading").remove();
-});
-$(function () {
     //fetch JSON
     $.getJSON("./information.json")
         .then(function (data) {
@@ -84,6 +80,9 @@ $(function () {
 
             //add footer text
             $("#dateNow").text(`${new Date().getFullYear()}`);
+
+            //remove loading
+            $(".loading").remove();
         })
         .catch(function () {
             $(".loading").remove();
