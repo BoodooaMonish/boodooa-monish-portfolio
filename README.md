@@ -42,12 +42,19 @@ npm install
 To run in hot module reloading mode:
 
 ```sh
+# Only use when changes are made to information.json and/ or thumbnail is added/ modified in the assets/thumbnails folder
+npm run addJSON
+npm run addThumbnails
+
+# then, to run the live server module,
 npm start
 ```
 
 To create a production build:
 
 ```sh
+npm run addJSON
+npm run addThumbnails
 npm run build
 ```
 

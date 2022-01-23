@@ -16,6 +16,13 @@
             "image": "/thumbnails/raghoo-veggies-thumb.png",
             "code": "https://github.com/BoodooaMonish/raghoo-veggies",
             "website": "https://raghoo-veggies-474e63.netlify.app/"
+        },
+        {
+            "name": "Nuzimaz Image Searcher",
+            "description": "An image searcher website that uses the pexels public api to search and browse royalty free images shared by pexels creators",
+            "image": "/thumbnails/nuzimaz-thumb.png",
+            "code": "https://github.com/BoodooaMonish/nuzimaz-pexels-react",
+            "website": "https://nuzimaz-414bd5.netlify.app/"
         }
     ]
 }
