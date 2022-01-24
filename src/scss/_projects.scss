@@ -34,7 +34,7 @@
     &-items {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: stretch;
         flex-wrap: wrap;
         margin-top: 4rem;
         animation: projectsItem 500ms ease-out;
@@ -54,6 +54,11 @@
     margin: 1rem 1rem 2rem 1rem;
     background-color: $color-gray-light;
     box-shadow: -3px 3px 8px -1px $color-base-dark;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
     &::before {
         content: "";
         position: absolute;
