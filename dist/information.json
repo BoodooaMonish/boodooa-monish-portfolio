@@ -23,6 +23,13 @@
             "image": "/thumbnails/nuzimaz-thumb.png",
             "code": "https://github.com/BoodooaMonish/nuzimaz-pexels-react",
             "website": "https://nuzimaz-414bd5.netlify.app/"
+        },
+        {
+            "name": "Protez Nou Natir Fundraising Blog Website",
+            "description": "a fundraising blog and donation website with the goal of protecting nature by accumulating funds for particular causes while also reporting its activities through its blog section",
+            "image": "/thumbnails/protez-nou-natir-thumb.png",
+            "code": "https://github.com/BoodooaMonish/protez-nou-natir-gatsby",
+            "website": "https://protez-nou-natir-294a50.netlify.app/"
         }
     ]
 }
