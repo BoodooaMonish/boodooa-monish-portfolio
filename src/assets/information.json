@@ -6,7 +6,7 @@
     },
     "introduction": "IT Graduate seeking a career in web development. Possess a strong sense in designing and developing accessible responsive websites to provide an immersive and engaging user experience. <br /> Also passionate about UI Designs and Web Animations.",
     "skills": {
-        "Client Side": ["HTML5", "CSS3", "JAVASCRIPT", "JQUERY", "BOOTSTRAP", "SASS", "VUEJS", "TAILWIND CSS", "REST API", "CONTENTFUL"],
+        "Client Side": ["HTML5", "CSS3", "JAVASCRIPT", "JQUERY", "BOOTSTRAP", "SASS", "REACT", "REST API", "CONTENTFUL"],
         "Development Tools": ["VISUAL STUDIO CODE", "GIT", "INKSCAPE", "GIMP", "VITEJS"]
     },
     "projects": [
